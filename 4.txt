@@ -1,0 +1,256 @@
+cat /proc/devices
+Character devices:
+  1 mem
+  2 pty
+  3 ttyp
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+ 10 misc
+108 ppp
+180 usb
+188 ttyUSB
+205 atmapi
+206 bcrmboard
+208 adsl
+209 endpoint
+212 bcm
+
+Block devices:
+  8 sd
+ 31 mtdblock
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+
+
+cat /proc/partitions
+major minor  #blocks  name      vendor
+
+  31     0       7596 mtdblock0
+
+
+cat /proc/iomem
+00000000-03f9191f : System RAM
+  00010000-001d90b7 : Kernel code
+  001d90b8-002290bf : Kernel data
+10000000-10ffffff : bcm63xx pci memory space
+  10000000-1000ffff : 0000:00:01.0
+    10000000-1000ffff : 0000:00:01.0
+  fffe1400-fffe14ff : 0000:00:09.0
+  fffe1300-fffe13ff : 0000:00:0a.0
+fffe1300-fffe13ff : ehci_hcd
+fffe1400-fffe14ff : ohci_hcd
+
+
+dumpcfg ?
+<psitree>
+<WirelessCfg>
+<vars state="enabled" curState="enabled" ssIdIndex="0" country="ES" ses_enable="1" ses_event="2" ses_states="01:01" ses_ssid="" ses_hide="0" ses_wpa_psk="" ses_auth="0" ses_auth_mode="" ses_wep="" ses_wpa="" ses_client_enable="1" ses_client_event="0" ses_wds_mode="2"  ses_wds_wsec="" apMode="ap"  bridgeRestrict="disabled"  wdsMAC_0=""  wdsMAC_1=""  wdsMAC_2=""  wdsMAC_3=""  band="b" channel="3" rate="auto" multicastRate="auto" basicRate="default" fragThreshold="2346" RTSThreshold="2346" DTIM="1" beacon="100" XPress="off" gMode="auto" gProtection="auto" preamble="long" AfterBurner="off" TxPowerPercent="100" WME="on" WMENoAck="on" WMEApsd="on"  RadioCtl="on" RegulatoryMode="off" PreNetRadarDectTime="60" InNetRadarDectTime="60" TpcMitigation="0" AutoChannelTimer="0" globalMaxAssoc="128" AutoSwOffdays="0" StarOfftTime="0" EndOffTime="0" NBandwidthCap="1" NCtrlSideband="upper" NBand="2" NMCSIdx="0" NProtection="auto" NMode="auto" NReqd="off" />
+<wlMssidVars tableSize="4">
+<wlMssidEntry enblSsId="1" ssId="W.Studio" hide="0" apIsolation="off" fltMacMode="disabled" disableWme="off" MaxAssoc = "32"  wsc_mode="disabled"  wsc_config_state="1"  authMode="psk2" radiusServerIP="0.0.0.0" radiusServerPort="1812" radiusServerKey="" wep="disabled" auth="0" keyBit="128-bit" key64_1="" key64_2="" key64_3="" key64_4="" key64Index="1" key128_1="1234567890123"  key128_2=""  key128_3=""  key128_4=""  key128Index="1" wpaRekey="0" wpakey="ima53505896"  Preauthentication="off" ReauthTimeout="36000" wpa="tkip+aes" tr69cBeaconType="Basic" tr69cBasicEncryptionModes="None" tr69cBasicAuthenticationMode="None" tr69cWPAEncryptionModes="WEPEncryption" tr69cWPAAuthenticationMode="PSKAuthentication" tr69cIEEE11iEncryptionModes="AESEncryption" tr69cIEEE11iAuthenticationMode="PSKAuthentication"/>
+<wlMssidEntry enblSsId="1" ssId="IMAW" hide="0" apIsolation="off" fltMacMode="disabled" disableWme="off" MaxAssoc = "32"  wsc_mode="disabled"  wsc_config_state="1"  authMode="psk2mix" radiusServerIP="0.0.0.0" radiusServerPort="1812" radiusServerKey="" wep="disabled" auth="0" keyBit="128-bit" key64_1="" key64_2="" key64_3="" key64_4="" key64Index="1" key128_1=""  key128_2=""  key128_3=""  key128_4=""  key128Index="1" wpaRekey="0" wpakey="UXDSXKHXPS2SWQ"  Preauthentication="off" ReauthTimeout="36000" wpa="aes" tr69cBeaconType="Basic" tr69cBasicEncryptionModes="None" tr69cBasicAuthenticationMode="None" tr69cWPAEncryptionModes="WEPEncryption" tr69cWPAAuthenticationMode="PSKAuthentication" tr69cIEEE11iEncryptionModes="AESEncryption" tr69cIEEE11iAuthenticationMode="PSKAuthentication"/>
+<wlMssidEntry enblSsId="0" ssId="Guest1" hide="0" apIsolation="off" fltMacMode="disabled" disableWme="off" MaxAssoc = "32"  wsc_mode="disabled"  wsc_config_state="1"  authMode="open" radiusServerIP="0.0.0.0" radiusServerPort="1812" radiusServerKey="" wep="disabled" auth="0" keyBit="128-bit" key64_1="" key64_2="" key64_3="" key64_4="" key64Index="1" key128_1=""  key128_2=""  key128_3=""  key128_4=""  key128Index="1" wpaRekey="0" wpakey=""  Preauthentication="off" ReauthTimeout="36000" wpa="aes" tr69cBeaconType="Basic" tr69cBasicEncryptionModes="None" tr69cBasicAuthenticationMode="None" tr69cWPAEncryptionModes="WEPEncryption" tr69cWPAAuthenticationMode="PSKAuthentication" tr69cIEEE11iEncryptionModes="AESEncryption" tr69cIEEE11iAuthenticationMode="PSKAuthentication"/>
+<wlMssidEntry enblSsId="0" ssId="Guest2" hide="0" apIsolation="off" fltMacMode="disabled" disableWme="off" MaxAssoc = "32"  wsc_mode="disabled"  wsc_config_state="1"  authMode="open" radiusServerIP="0.0.0.0" radiusServerPort="1812" radiusServerKey="" wep="disabled" auth="0" keyBit="128-bit" key64_1="" key64_2="" key64_3="" key64_4="" key64Index="1" key128_1=""  key128_2=""  key128_3=""  key128_4=""  key128Index="1" wpaRekey="0" wpakey=""  Preauthentication="off" ReauthTimeout="36000" wpa="aes" tr69cBeaconType="Basic" tr69cBasicEncryptionModes="None" tr69cBasicAuthenticationMode="None" tr69cWPAEncryptionModes="WEPEncryption" tr69cWPAAuthenticationMode="PSKAuthentication" tr69cIEEE11iEncryptionModes="AESEncryption" tr69cIEEE11iAuthenticationMode="PSKAuthentication"/>
+</wlMssidVars>
+</WirelessCfg>
+<E220>
+<Entry LinkMode="0" OperationMode="0" ConType="1" Channel="0" VoiceChannel ="1" VoiceEnable ="1" />
+</E220>
+<Hspacfg>
+<Entry InstantMode="0" IcmpSpeedCyle="0" SwitchConfirm="1" DaHspaDelayCS="0" DaHspaDelayPS="0"  HspaDaDelayCS="0" HspaDaDelayPS="0" HspaVoiceDomain="0" HspaVoiceServiceFlag="3" OperSelect="27201" Operator="21401|26202|22210|26801|20205|21670|60202|27201|20404|22601|28602|23415"/>
+</Hspacfg>
+<SystemInfo>
+<protocol autoScan="enable" upnp="enable" igmpSnp ="enable"  macFilterPolicy="forward" siproxd="disable" ddns="disable"/>
+<sysLog state="enable" displayLevel="CRIT" logLevel="CRIT" option="local" serverIP="0.0.0.0" serverPort="514" fwlog="disable" Syslog="disable"/>
+<sysUserName value="admin"/>
+<sysHttp port="80"/>
+<siproxd enable="disable" port="5060"/>
+<ftpinfo enable="1" username="vodafone" password="vodafone" port="21" path="/"/>
+<tr69c state="enable" upgradesManaged="0" upgradeAvailable="0" informEnbl="1" informTime="0" informInterval="604800" acsURL="tr069.vodafone.ie" acsUser="vodafone" acsPwd="vodafone" parameterKey="12345" connReqURL="" connReqUser="vodafone@vodafone.ie" connReqPwd="broadband" kickURL="http://www.huawei.com/acs" provisioningCode="12345"/>
+<snmp state="enable" readCommunity="s0l0tuya" writeCommunity="4rEAd&wrItE" sysName="unknown" sysLocation="unknown" sysContact="unknown" trapIP="0.0.0.0" debug="0" configId="00000000"/>
+<sysPassword value="VFIE-hg556"/>
+<admPassword value="advanced"/>
+<sptPassword value="support"/>
+<usrPassword value="vodafone"/>
+</SystemInfo>
+<AtmCfg>
+<initCfg structureId="2" threadPriority="25" freeCellQSize="10" freePktQSize="200" freePktQBufSize="1600" freePktQBufOffset="32" rxCellQSize="10" rxPktQSize="200" txFifoPriority="64" aal5MaxSduLen="64" aal2MaxSduLen="0"/>
+</AtmCfg>
+<AtmCfgTd>
+<td1 cat="UBR" PCR="0" SCR="0" MBS="0"/>
+<td2 cat="UBR" PCR="0" SCR="0" MBS="0"/>
+</AtmCfgTd>
+<AtmCfgVcc>
+<vccId9999 vpi="0" vci="65534" tdId="0" aalType="AAL2" adminStatus="down" encap="unknown" qos="disable" instanceId="1509949448"/>
+<vccId1 vpi="8" vci="35" tdId="2" aalType="AAL5" adminStatus="up" encap="llc" qos="enable" instanceId="1509949446"/>
+<vccId2 vpi="255" vci="65535" tdId="1" aalType="AAL5" adminStatus="up" encap="unknown" qos="enable" instanceId="1509949443"/>
+</AtmCfgVcc>
+<SecCfg>
+<srvCtrlList ftp="lan" http="enable" icmp="enable" snmp="wan" ssh="disable" telnet="enable" tftp="disable"/>
+<qosService tableSize="52">
+<qosServiceEntry id="1" parent="1" serviceName="HTTP" protocol="6" srcPort="80" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="1" serviceName="HTTP" protocol="6" srcPort="" srcMaxPort="" dstPort="80" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="2" serviceName="HTTPs" protocol="6" srcPort="443" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="2" serviceName="HTTPs" protocol="6" srcPort="" srcMaxPort="" dstPort="443" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="3" serviceName="FTP" protocol="6" srcPort="21" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="3" serviceName="FTP" protocol="6" srcPort="" srcMaxPort="" dstPort="21" dstMaxPort=""/>
+<qosServiceEntry id="3" parent="3" serviceName="FTP" protocol="6" srcPort="20" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="4" parent="3" serviceName="FTP" protocol="6" srcPort="" srcMaxPort="" dstPort="20" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="4" serviceName="RIP" protocol="17" srcPort="520" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="5" serviceName="DNS" protocol="6" srcPort="53" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="5" serviceName="DNS" protocol="6" srcPort="" srcMaxPort="" dstPort="53" dstMaxPort=""/>
+<qosServiceEntry id="3" parent="5" serviceName="DNS" protocol="17" srcPort="53" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="4" parent="5" serviceName="DNS" protocol="17" srcPort="" srcMaxPort="" dstPort="53" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="6" serviceName="DHCP" protocol="17" srcPort="" srcMaxPort="" dstPort="67" dstMaxPort="68"/>
+<qosServiceEntry id="1" parent="7" serviceName="ICMP" protocol="1" srcPort="" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="8" serviceName="IGMP" protocol="2" srcPort="" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="9" serviceName="Telnet" protocol="6" srcPort="23" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="9" serviceName="Telnet" protocol="6" srcPort="" srcMaxPort="" dstPort="23" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="10" serviceName="HTTP Proxy" protocol="6" srcPort="8080" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="10" serviceName="HTTP Proxy" protocol="6" srcPort="" srcMaxPort="" dstPort="8080" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="11" serviceName="POP2" protocol="6" srcPort="109" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="11" serviceName="POP2" protocol="6" srcPort="" srcMaxPort="" dstPort="109" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="12" serviceName="POP3" protocol="6" srcPort="110" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="12" serviceName="POP3" protocol="6" srcPort="" srcMaxPort="" dstPort="110" dstMaxPort=""/>
+<qosServiceEntry id="3" parent="12" serviceName="POP3" protocol="17" srcPort="110" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="4" parent="12" serviceName="POP3" protocol="17" srcPort="" srcMaxPort="" dstPort="110" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="13" serviceName="POP3s" protocol="6" srcPort="995" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="13" serviceName="POP3s" protocol="6" srcPort="" srcMaxPort="" dstPort="995" dstMaxPort=""/>
+<qosServiceEntry id="3" parent="13" serviceName="POP3s" protocol="17" srcPort="995" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="4" parent="13" serviceName="POP3s" protocol="17" srcPort="" srcMaxPort="" dstPort="995" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="14" serviceName="SMTP" protocol="6" srcPort="25" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="14" serviceName="SMTP" protocol="6" srcPort="" srcMaxPort="" dstPort="25" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="15" serviceName="IMAPS" protocol="6" srcPort="993" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="15" serviceName="IMAPS" protocol="6" srcPort="" srcMaxPort="" dstPort="993" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="16" serviceName="SSH" protocol="6" srcPort="22" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="16" serviceName="SSH" protocol="6" srcPort="" srcMaxPort="" dstPort="22" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="17" serviceName="IPSec" protocol="17" srcPort="500" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="17" serviceName="IPSec" protocol="17" srcPort="" srcMaxPort="" dstPort="500" dstMaxPort=""/>
+<qosServiceEntry id="3" parent="17" serviceName="IPSec" protocol="50" srcPort="" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="4" parent="17" serviceName="IPSec" protocol="51" srcPort="" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="18" serviceName="SIP" protocol="6" srcPort="5060" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="18" serviceName="SIP" protocol="6" srcPort="" srcMaxPort="" dstPort="5060" dstMaxPort=""/>
+<qosServiceEntry id="3" parent="18" serviceName="SIP" protocol="17" srcPort="5060" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="4" parent="18" serviceName="SIP" protocol="17" srcPort="" srcMaxPort="" dstPort="5060" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="19" serviceName="RTP" protocol="17" srcPort="50000" srcMaxPort="50020" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="20" serviceName="RTCP" protocol="17" srcPort="50000" srcMaxPort="50020" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="1" parent="21" serviceName="SNMP" protocol="17" srcPort="161" srcMaxPort="162" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="21" serviceName="SNMP" protocol="17" srcPort="" srcMaxPort="" dstPort="161" dstMaxPort="162"/>
+<qosServiceEntry id="1" parent="22" serviceName="SSMTP" protocol="6" srcPort="465" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="2" parent="22" serviceName="SSMTP" protocol="6" srcPort="" srcMaxPort="" dstPort="465" dstMaxPort=""/>
+<qosServiceEntry id="3" parent="22" serviceName="SSMTP" protocol="17" srcPort="465" srcMaxPort="" dstPort="" dstMaxPort=""/>
+<qosServiceEntry id="4" parent="22" serviceName="SSMTP" protocol="17" srcPort="" srcMaxPort="" dstPort="465" dstMaxPort=""/>
+</qosService>
+<accCtrlMode state="disable"/>
+<secDosCfg enable="1" syn="0" fin="0" udp="0" icmp="0" synPerIp="0" finPerIp="0" udpPerIp="0" icmpPerIp="0" portScan="0" icmpSmurf="0" ipLand="1" SameSrcDst="1" ipSproof="1" ipTeardrop="1" pingOfDeath="1" tcpScan="0" SynWithData="0" udpBomb="0" ptScanSens="0" synSpd="50" finSpd="50" udpSpd="500" icmpSpd="10" synPerIpSpd="10" finPerIpSpd="10" udpPerIpSpd="100" icmpPerIpSpd="5" BrdcstSrc="1" LanSrcIp="1" Frgmthdr="1" InvalidTcpFlg="1"/>
+<secFwCfg level="disable"/>
+<qosQueue tableSize="6">
+<qosQueueEntry id="1" precedence="1" weight="0" mark="1" schAlg="SP"/>
+<qosQueueEntry id="2" precedence="2" weight="0" mark="2" schAlg="WRR"/>
+<qosQueueEntry id="3" precedence="2" weight="0" mark="3" schAlg="WRR"/>
+<qosQueueEntry id="4" precedence="3" weight="0" mark="4" schAlg="SP"/>
+<qosQueueEntry id="5" precedence="2" weight="0" mark="5" schAlg="WRR"/>
+<qosQueueEntry id="6" precedence="2" weight="0" mark="6" schAlg="WRR"/>
+</qosQueue>
+<qosCfg enable="1"/>
+<secEnblCfg fw_enable="0" inflt_enable="0" outflt_enable="0" macflt_enable="0" macmngr_enable="0" nat_enable="1"/>
+<accCtrl tableSize="1">
+<accCtrlEntry id="1" ipAddr="213.233.159.69"/>
+</accCtrl>
+<qosCls tableSize="10">
+<qosClsEntry id="1" type="3" clsName="1" wanVlan8021p="-1" lanIfcName="" etheProt="IP" protocol="" srcAddr="" srcMask="" srcPort="" dstAddr="" dstMask="" dstPort="" vlan8021p="-1" srcMacAddr="" srcMacMask="" dstMacAddr="" dstMacMask="" dscpCheck="-1" dscpMark="-1" vlanidCheck="-1" vlanidMark="-1" queueId="1" serviceName="DNS"/>
+<qosClsEntry id="2" type="3" clsName="2" wanVlan8021p="-1" lanIfcName="" etheProt="IP" protocol="" srcAddr="" srcMask="" srcPort="" dstAddr="" dstMask="" dstPort="" vlan8021p="-1" srcMacAddr="" srcMacMask="" dstMacAddr="" dstMacMask="" dscpCheck="-1" dscpMark="-1" vlanidCheck="-1" vlanidMark="-1" queueId="1" serviceName="HTTP"/>
+<qosClsEntry id="3" type="3" clsName="3" wanVlan8021p="-1" lanIfcName="" etheProt="IP" protocol="" srcAddr="" srcMask="" srcPort="" dstAddr="" dstMask="" dstPort="" vlan8021p="-1" srcMacAddr="" srcMacMask="" dstMacAddr="" dstMacMask="" dscpCheck="-1" dscpMark="-1" vlanidCheck="-1" vlanidMark="-1" queueId="1" serviceName="HTTPs"/>
+<qosClsEntry id="4" type="3" clsName="4" wanVlan8021p="-1" lanIfcName="" etheProt="IP" protocol="ICMP" srcAddr="" srcMask="" srcPort="" dstAddr="" dstMask="" dstPort="" vlan8021p="-1" srcMacAddr="" srcMacMask="" dstMacAddr="" dstMacMask="" dscpCheck="-1" dscpMark="-1" vlanidCheck="-1" vlanidMark="-1" queueId="1" serviceName=""/>
+<qosClsEntry id="5" type="3" clsName="5" wanVlan8021p="-1" lanIfcName="" etheProt="IP" protocol="" srcAddr="" srcMask="" srcPort="" dstAddr="" dstMask="" dstPort="" vlan8021p="-1" srcMacAddr="" srcMacMask="" dstMacAddr="" dstMacMask="" dscpCheck="-1" dscpMark="-1" vlanidCheck="-1" vlanidMark="-1" queueId="2" serviceName="SMTP"/>
+<qosClsEntry id="6" type="3" clsName="6" wanVlan8021p="-1" lanIfcName="" etheProt="IP" protocol="" srcAddr="" srcMask="" srcPort="" dstAddr="" dstMask="" dstPort="" vlan8021p="-1" srcMacAddr="" srcMacMask="" dstMacAddr="" dstMacMask="" dscpCheck="-1" dscpMark="-1" vlanidCheck="-1" vlanidMark="-1" queueId="2" serviceName="IMAPS"/>
+<qosClsEntry id="7" type="3" clsName="7" wanVlan8021p="-1" lanIfcName="" etheProt="IP" protocol="" srcAddr="" srcMask="" srcPort="" dstAddr="" dstMask="" dstPort="" vlan8021p="-1" srcMacAddr="" srcMacMask="" dstMacAddr="" dstMacMask="" dscpCheck="-1" dscpMark="-1" vlanidCheck="-1" vlanidMark="-1" queueId="2" serviceName="FTP"/>
+<qosClsEntry id="8" type="3" clsName="8" wanVlan8021p="-1" lanIfcName="" etheProt="IP" protocol="" srcAddr="" srcMask="" srcPort="" dstAddr="" dstMask="" dstPort="" vlan8021p="-1" srcMacAddr="" srcMacMask="" dstMacAddr="" dstMacMask="" dscpCheck="-1" dscpMark="-1" vlanidCheck="-1" vlanidMark="-1" queueId="2" serviceName="POP3"/>
+<qosClsEntry id="9" type="3" clsName="9" wanVlan8021p="-1" lanIfcName="" etheProt="IP" protocol="" srcAddr="" srcMask="" srcPort="" dstAddr="" dstMask="" dstPort="" vlan8021p="-1" srcMacAddr="" srcMacMask="" dstMacAddr="" dstMacMask="" dscpCheck="-1" dscpMark="-1" vlanidCheck="-1" vlanidMark="-1" queueId="2" serviceName="POP3s"/>
+<qosClsEntry id="10" type="3" clsName="10" wanVlan8021p="-1" lanIfcName="" etheProt="IP" protocol="" srcAddr="" srcMask="" srcPort="" dstAddr="" dstMask="" dstPort="" vlan8021p="-1" srcMacAddr="" srcMacMask="" dstMacAddr="" dstMacMask="" dscpCheck="-1" dscpMark="-1" vlanidCheck="-1" vlanidMark="-1" queueId="2" serviceName="SSMTP"/>
+</qosCls>
+</SecCfg>
+<Lan>
+<entry9999 address="1.1.1.1" mask="255.255.255.0" dhcpServer="disable" leasedTime="0" startAddr="0.0.0.0" endAddr="0.0.0.0" reservedAddr="" dhcpNtpServer1="0.0.0.0" dhcpNtpServer2="0.0.0.0" lanDns1="0.0.0.0" lanDns2="0.0.0.0" opt43="" lanDomain="" dhcpClassId="" instanceId="1509949449" addrType="3"/>
+<entry1 address="192.168.0.5" mask="255.255.255.0" dhcpServer="disable" leasedTime="24" startAddr="192.168.1.2" endAddr="192.168.1.254" reservedAddr="" dhcpNtpServer1="0.0.0.0" dhcpNtpServer2="0.0.0.0" lanDns1="192.168.0.5" lanDns2="192.168.0.5" opt43="" lanDomain="Vodafone.DSLRouter" dhcpClassId="" instanceId="1509949441" addrType="2"/>
+<ethCfg1024 speed="auto" type="auto" MTU="1500" disabled="0"/>
+<ethCfg1025 speed="auto" type="auto" MTU="1500" disabled="0"/>
+<ethCfg1026 speed="auto" type="auto" MTU="1500" disabled="0"/>
+<ethCfg1027 speed="auto" type="auto" MTU="1500" disabled="0"/>
+</Lan>
+<RouteCfg>
+<ripGlobal state="disable" ripIfcTableSize="1"/>
+<ripIfc tableSize="1">
+<ripIfcEntry id="1" name="br0" state="disable" version="2" operation="active"/>
+</ripIfc>
+</RouteCfg>
+<PMapCfg>
+<pmap tableSize="1">
+<pmapEntry id="1" groupName="Default" ifList="eth0" vendorid0="" vendorid1="" vendorid2="" vendorid3="" vendorid4=""/>
+</pmap>
+<pmapIfcCfg pmapIfName="eth0" pmapIfcStatus="disable"/>
+</PMapCfg>
+<SambaCfg>
+<sambaStatus enableSamba="enable" workgrp="vodafone" svrname="vodafone" netbname="vodafone"/>
+</SambaCfg>
+<Voice>
+<sipCfg proxyAddr="0.0.0.0" proxyPort="5060" obProxyAddr="0.0.0.0" obProxyPort="5060" regAddr="0.0.0.0" regPort="5060" enblTagMat="Yes" sipLogAddr="192.168.0.100" sipLogPort="55555" extension1="" password1="" extension2="" password2="" extension3="" password3="" extension4="" password4="" ifName="br0" domainName="" localeName="USA" voiceCodec="none" voicePtime="20" pstnRouteRule="auto" pstnRouteData="0"/>
+<sip_phonecfg speak="0" listen="0" interval="50" region="18" minHookFlash="80" maxHookFlash="250" digitmap="[X*#ABCD].T"                        offhooktime="250" onhooktime="250" fstdialtime="150" reinjection="0" innercall="1" modemservice="1"/>
+<sipAdvanced sipSrvExpire="3600" sipSrvRegister="10" sipSrvSessionExpires="32000" sipSrvMinSe="90"           sipMaxRetryTime="32" sipPrimaryCheckTime="300" sipMWIExpire="3600"          sipRtpStartPort="50000" sipRtpEndPort="50020"           sipRtpTxReptatInterval="3000" sipRtcpMonitor="0"           sipInterface="br0" sipAdvLocalPort="6050" pstnCallPrefix="UNSPT" sipTestEnabled="0" dscpmark="46" />
+<sipQos sipQosTos="0" sipQosVlanEnbled="0" sipQosVlanId="0" sipQosPriority="3"/>
+<sipBasic tableSize="2">
+<sipBasicEntry id="1" sipUserId="" sipUserName="" sipUserPasswd="" sipLocalPort="6050" sipFwdTblId="1" sipClipEnable="1" sipLineEnable="0" sipLineCallHold="1" sipLineCallWait="1" sipLine3Way="1" sipLineCallTransfer="1" sipLineMwi="0" sipLineMwiAccount="" sipLineFaxDetect="1" vad="0" ec="1" cng="0" sipVoiceCapCodec1="8" sipVoiceCapCodec2="0" sipVoiceCapCodec3="9" sipVoiceCapCodec4="2" sipVoiceCapCodec5="18" sipVoiceCapPTime1="20" sipVoiceCapPTime2="20" sipVoiceCapPTime3="20" sipVoiceCapPTime4="20" sipVoiceCapPTime5="20" sipVoiceCapPriority1="1" sipVoiceCapPriority2="3" sipVoiceCapPriority3="5" sipVoiceCapPriority4="4" sipVoiceCapPriority5="2" sipVoiceCapIfEnable1="1" sipVoiceCapIfEnable2="1" sipVoiceCapIfEnable3="0" sipVoiceCapIfEnable4="0" sipVoiceCapIfEnable5="1" sipVoiceDtmfType="1" sipFaxType="2" sipSpNum00="" sipSpName00="" sipApNum00="" sipApName00=""                            sipSsNum00="" sipSsName00="" sipAsNum00="" sipAsName00="" sipSpNum01="" sipSpName01="" sipApNum01="" sipApName01=""                             sipSsNum01="" sipSsName01="" sipAsNum01="" sipAsName01="" sipSpNum02="" sipSpName02="" sipApNum02="" sipApName02=""                             sipSsNum02="" sipSsName02="" sipAsNum02="" sipAsName02="" sipSpNum03="" sipSpName03="" sipApNum03="" sipApName03=""                             sipSsNum03="" sipSsName03="" sipAsNum03="" sipAsName03="" sipSpNum04="" sipSpName04="" sipApNum04="" sipApName04=""                             sipSsNum04="" sipSsName04="" sipAsNum04="" sipAsName04="" sipSpNum05="" sipSpName05="" sipApNum05="" sipApName05=""                             sipSsNum05="" sipSsName05="" sipAsNum05="" sipAsName05="" sipSpNum06="" sipSpName06="" sipApNum06="" sipApName06=""                             sipSsNum06="" sipSsName06="" sipAsNum06="" sipAsName06="" sipSpNum07="" sipSpName07="" sipApNum07="" sipApName07=""                             sipSsNum07="" sipSsName07="" sipAsNum07="" sipAsName07="" sipSpNum08="" sipSpName08="" sipApNum08="" sipApName08=""                             sipSsNum08="" sipSsName08="" sipAsNum08="" sipAsName08="" sipSpNum09="" sipSpName09="" sipApNum09="" sipApName09=""                             sipSsNum09="" sipSsName09="" sipAsNum09="" sipAsName09="" sipSpNum10="" sipSpName10="" sipApNum10="" sipApName10=""                             sipSsNum10="" sipSsName10="" sipAsNum10="" sipAsName10="" sipSpNum11="" sipSpName11="" sipApNum11="" sipApName11=""                             sipSsNum11="" sipSsName11="" sipAsNum11="" sipAsName11="" sipSpNum12="" sipSpName12="" sipApNum12="" sipApName12=""                             sipSsNum12="" sipSsName12="" sipAsNum12="" sipAsName12="" sipSpNum13="" sipSpName13="" sipApNum13="" sipApName13=""                             sipSsNum13="" sipSsName13="" sipAsNum13="" sipAsName13="" sipSpNum14="" sipSpName14="" sipApNum14="" sipApName14=""                             sipSsNum14="" sipSsName14="" sipAsNum14="" sipAsName14="" sipSpNum15="" sipSpName15="" sipApNum15="" sipApName15=""                             sipSsNum15="" sipSsName15="" sipAsNum15="" sipAsName15=""/>
+<sipBasicEntry id="2" sipUserId="" sipUserName="" sipUserPasswd="" sipLocalPort="6050" sipFwdTblId="1" sipClipEnable="1" sipLineEnable="0" sipLineCallHold="1" sipLineCallWait="1" sipLine3Way="1" sipLineCallTransfer="1" sipLineMwi="0" sipLineMwiAccount="" sipLineFaxDetect="1" vad="0" ec="1" cng="0" sipVoiceCapCodec1="8" sipVoiceCapCodec2="0" sipVoiceCapCodec3="9" sipVoiceCapCodec4="2" sipVoiceCapCodec5="18" sipVoiceCapPTime1="20" sipVoiceCapPTime2="20" sipVoiceCapPTime3="20" sipVoiceCapPTime4="20" sipVoiceCapPTime5="20" sipVoiceCapPriority1="1" sipVoiceCapPriority2="3" sipVoiceCapPriority3="5" sipVoiceCapPriority4="4" sipVoiceCapPriority5="2" sipVoiceCapIfEnable1="1" sipVoiceCapIfEnable2="1" sipVoiceCapIfEnable3="0" sipVoiceCapIfEnable4="0" sipVoiceCapIfEnable5="1" sipVoiceDtmfType="1" sipFaxType="2" sipSpNum00="" sipSpName00="" sipApNum00="" sipApName00=""                            sipSsNum00="" sipSsName00="" sipAsNum00="" sipAsName00="" sipSpNum01="" sipSpName01="" sipApNum01="" sipApName01=""                             sipSsNum01="" sipSsName01="" sipAsNum01="" sipAsName01="" sipSpNum02="" sipSpName02="" sipApNum02="" sipApName02=""                             sipSsNum02="" sipSsName02="" sipAsNum02="" sipAsName02="" sipSpNum03="" sipSpName03="" sipApNum03="" sipApName03=""                             sipSsNum03="" sipSsName03="" sipAsNum03="" sipAsName03="" sipSpNum04="" sipSpName04="" sipApNum04="" sipApName04=""                             sipSsNum04="" sipSsName04="" sipAsNum04="" sipAsName04="" sipSpNum05="" sipSpName05="" sipApNum05="" sipApName05=""                             sipSsNum05="" sipSsName05="" sipAsNum05="" sipAsName05="" sipSpNum06="" sipSpName06="" sipApNum06="" sipApName06=""                             sipSsNum06="" sipSsName06="" sipAsNum06="" sipAsName06="" sipSpNum07="" sipSpName07="" sipApNum07="" sipApName07=""                             sipSsNum07="" sipSsName07="" sipAsNum07="" sipAsName07="" sipSpNum08="" sipSpName08="" sipApNum08="" sipApName08=""                             sipSsNum08="" sipSsName08="" sipAsNum08="" sipAsName08="" sipSpNum09="" sipSpName09="" sipApNum09="" sipApName09=""                             sipSsNum09="" sipSsName09="" sipAsNum09="" sipAsName09="" sipSpNum10="" sipSpName10="" sipApNum10="" sipApName10=""                             sipSsNum10="" sipSsName10="" sipAsNum10="" sipAsName10="" sipSpNum11="" sipSpName11="" sipApNum11="" sipApName11=""                             sipSsNum11="" sipSsName11="" sipAsNum11="" sipAsName11="" sipSpNum12="" sipSpName12="" sipApNum12="" sipApName12=""                             sipSsNum12="" sipSsName12="" sipAsNum12="" sipAsName12="" sipSpNum13="" sipSpName13="" sipApNum13="" sipApName13=""                             sipSsNum13="" sipSsName13="" sipAsNum13="" sipAsName13="" sipSpNum14="" sipSpName14="" sipApNum14="" sipApName14=""                             sipSsNum14="" sipSsName14="" sipAsNum14="" sipAsName14="" sipSpNum15="" sipSpName15="" sipApNum15="" sipApName15=""                             sipSsNum15="" sipSsName15="" sipAsNum15="" sipAsName15=""/>
+</sipBasic>
+</Voice>
+<SNTPCfg>
+<cfg state="enable" CfgServer="disable" server1="ie.pool.ntp.org" server2="europe.pool.ntp.org" timezone="Greenwich Mean Time: Dublin, Edinburgh, Lisbon, London" FailTime="5" SucTime="21600" EnableSum="1"/>
+</SNTPCfg>
+<PPPProfile>
+<pppPro tableSize="1">
+<pppProEntry id="1" ProName="123" UserName="vodafone" PassWord="vodafone" PhoneNum="*99#"  auth="0" autodns="0" preferredDns="255.255.255.255" alternateDns="255.255.255.255" autoApn="1" acApn="hs.vodafone.ie"/>
+</pppPro>
+</PPPProfile>
+<dhcphostname>
+<Entry option12="Huawei-HG556a-instalacion"/>
+</dhcphostname>
+<igmpproxy>
+<proxy_node igmpEnable="0" interface="none" version="2" groups="32" logSwitch="0"/>
+</igmpproxy>
+<pppsrv_8_35>
+<ppp_conId1 userName="vodafone@vodafone.ie" password="broadband" serviceName="" idleTimeout="0" ipExt="disable" auth="auto" useStaticIpAddr="0" localIpAddr="255.255.255.255" Debug="disable" ProName="" automanualConnect="1" delayRedial="25" timeout="3" delayTime="15" BridgeMixed="disable" Mtu="1492" LcpEchoInterval="30" IpExtMac="" enblpppVoB="disable" pppVoBitstreamIPAddr="255.255.255.255"/>
+</pppsrv_8_35>
+<wan_8_35>
+<entry1 vccId="1" conId="1" name="Data" protocol="PPPOE" encap="LLC" firewall="enable" nat="enable" vlanId="-1" service="enable" instanceId="1509949447" primary="0.0.0.0" secondary="0.0.0.0" domain="" gw="0.0.0.0"/>
+</wan_8_35>
+<pppsrv_255_65535>
+<ppp_conId1 userName="vodafone" password="vodafone" serviceName="" idleTimeout="0" ipExt="disable" auth="auto" useStaticIpAddr="0" localIpAddr="0.0.0.0" Debug="disable" ProName="123" automanualConnect="0" delayRedial="25" timeout="3" delayTime="15" BridgeMixed="disable" Mtu="1492" LcpEchoInterval="30" IpExtMac="" enblpppVoB="disable" pppVoBitstreamIPAddr="0.0.0.0"/>
+</pppsrv_255_65535>
+<wan_255_65535>
+<entry1 vccId="2" conId="1" name="pppou_255_65535_1" protocol="PPPOU" encap="LLC" firewall="enable" nat="enable" vlanId="0" service="enable" instanceId="1509949444" primary="0.0.0.0" secondary="0.0.0.0" domain="" gw="0.0.0.0"/>
+</wan_255_65535>
+</psitree>
+
+
+art ?
+
+Usage: art start <ip addr>
+       art stop
+       ip addr was the ftp or http server contain art tools.
+       -APDOWN exec ap down script before art start.
+       -PHTTP use http protocol to download art tool.
+
+

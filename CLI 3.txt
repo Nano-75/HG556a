@@ -1,0 +1,21 @@
+busybox
+busybox: not found
+
+busybox --help
+busybox --help: not found
+
+/bin/busybox
+/bin/busybox: not found
+
+echo $PATH
+/bin:/sbin:/usr/bin
+
+cat /proc/mounts
+
+rootfs / rootfs rw 0 0
+/dev/root / squashfs ro 0 0
+/proc /proc proc rw,nodiratime 0 0
+none /var tmpfs rw 0 0
+none /proc/bus/usb usbfs rw 0 0
+none /dev tmpfs rw 0 0
+

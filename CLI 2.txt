@@ -1,0 +1,42 @@
+1. ls /
+ls /: not found
+
+2. mount
+mount: not found
+
+3.cat /proc/filesystems
+nodev   sysfs
+nodev   rootfs
+nodev   bdev
+nodev   proc
+nodev   sockfs
+nodev   usbfs
+nodev   usbdevfs
+nodev   tmpfs
+nodev   pipefs
+        squashfs
+nodev   ramfs
+        msdos
+        vfat
+        ntfs
+nodev   fuse
+        fuseblk
+nodev   fusectl
+
+4.cat /proc/cpuinfo
+
+system type             : HW556
+processor               : 0
+cpu model               : BCM6358 V1.0
+BogoMIPS                : 299.00
+wait instruction        : no
+microsecond timers      : yes
+tlb_entries             : 32
+extra interrupt vector  : no
+hardware watchpoint     : no
+VCED exceptions         : not available
+VCEI exceptions         : not available
+
+5. cat /proc/cmdline
+root=31:0 ro noinitrd
+

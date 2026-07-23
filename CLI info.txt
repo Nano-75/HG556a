@@ -1,0 +1,104 @@
+1. cat /proc/version
+
+Linux version 2.6.8.1 (root@IBM_x3500) (gcc version 3.4.2) #4 Thu Jun 10 23:31:37 CST 2010
+
+2. version
+
+version: not found
+
+3. sysinfo
+
+Number of processes: 73
+ 12:21am  up 21 min,
+load average: 1 min:5.99, 5 min:5.89, 15 min:4.40
+              total         used         free       shared      buffers
+  Mem:        61352        29424        31928            0         4028
+ Swap:            0            0            0
+Total:        61352        29424        31928
+
+4. cat /proc/mtd
+
+dev:    size   erasesize  name
+mtd0: 0076b000 00001000 "Physically mapped flash"
+
+5. df
+
+df: not found
+
+6. ps
+
+  PID  Uid     VmSize Stat Command
+    1 admin       584 S   init
+    2 admin           SW  [ksoftirqd/0]
+    3 admin           SW< [events/0]
+    4 admin           SW< [khelper]
+    5 admin           SW< [kblockd/0]
+    6 admin           SW  [khubd]
+   20 admin           SW  [pdflush]
+   21 admin           SW  [pdflush]
+   22 admin           SW  [kswapd0]
+   23 admin           SW< [aio/0]
+   28 admin           SW  [mtdblockd]
+   36 admin           SW< [board]
+   50 admin       616 S   -sh
+  105 admin       248 S   usbmount
+  148 admin      2656 S   cfm
+  149 admin       440 S   ttyUSB
+  150 admin       440 S   ttyUSB
+  151 admin       440 S   ttyUSB
+  152 admin       440 S   ttyUSB
+  154 admin      1012 S   tmpfile
+  155 admin      1012 S   tmpfile
+  156 admin      1012 S   tmpfile
+  320 admin       184 S   /bin/scout
+  332 admin       260 S   pvc2684d
+  437 admin       632 S   syslogd -C -l 2
+  438 admin       296 S   sntp -s ie.pool.ntp.org -s europe.pool.ntp.org -F 5 -
+  441 admin       556 S   klogd
+  486 admin           SW  [RtmpWscTask]
+  580 admin      2580 S   bftpd
+  600 admin      1156 S   voice start
+  601 admin      1156 S   voice start
+  602 admin      1156 S   voice start
+  603 admin      1156 S   voice start
+  604 admin      1156 S   voice start
+  605 admin      1156 S   voice start
+  608 admin      1156 S   voice start
+  617 admin      1156 S   voice start
+  624 admin      1156 S   voice start
+  627 admin      1156 D   voice start
+  628 admin      1156 D   voice start
+  629 admin           SW  [aoRT]
+  630 admin           DW  [aoAP]
+  631 admin           DW  [CMT_EXCEPTION_I]
+  632 admin           DW  [HTSK]
+  633 admin           DW  [HRTBEAT]
+  634 admin           SW  [VRGEVPR]
+  635 admin           SW  [HCAS]
+  636 admin           SW  [PSTN]
+  637 admin           SW< [ReInjectionTask]
+  638 admin      1156 S   voice start
+  639 admin      1156 S   voice start
+  640 admin      1156 S   voice start
+  641 admin      1156 S   voice start
+  642 admin      1156 S   voice start
+  645 admin      1156 S   voice start
+  648 admin      2624 S   msgproc
+  649 admin      2644 S   telnetd
+  665 admin       392 S   dnsmasq --conf-file=/var/dnsmasq.conf --cache-size=30
+  666 admin      2904 S   httpd
+  667 admin      2904 S   httpd
+  668 admin      3072 S   tr69c
+  671 admin      2904 S   httpd
+  674 admin      3084 S   cfm
+  681 admin       596 S   smbd -D
+  684 admin       624 S   nmbd -D
+  688 admin      3084 S   cfm
+  689 admin      3084 S   cfm
+  698 admin       552 S   pppd -c 8.35.1 -i nas_8_35 -u vodafone@vodafone.ie -p
+  704 admin      2904 S   httpd
+  706 admin       560 S   pppd -c 255.65535.1 -i nas_255_65535 -u vodafone -p *
+  731 admin      2708 S   telnetd
+  740 admin       572 S   sh -c ps
+  741 admin       592 R   ps
+
