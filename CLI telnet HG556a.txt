@@ -1,6 +1,8 @@
+Desde Putty 192.168.0.5:23 telnet
 Login: admin
 Password: VFIE-hg556
 
+1. Help
 
 ?
 help
